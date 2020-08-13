@@ -3,9 +3,11 @@ import React from 'react';
 function NavBar() {
   return (
     <nav className="navbar">
-      <a href="#" className="logo">
-        TRBC
-      </a>
+      <img
+        id="img-logo"
+        src={require("../imgs/logo.png")} 
+        alt="" 
+      /> 
       <ul className="main-nav" id="js-menu">
         <li>
           <a href="#" className="nav-links">
@@ -19,7 +21,7 @@ function NavBar() {
         </li>
         <li>
           <a href="#" className="nav-links">
-            I\'m New
+            I'm New
           </a>
         </li>
         <li>
@@ -45,6 +47,13 @@ function NavBar() {
         <li>
           <a href="#" className="nav-links">
             Resources
+          </a>
+        </li>
+        <li>
+          <a
+            id="lang-toggle"
+            href="#" className="nav-links">
+           ENGLISH 
           </a>
         </li>
       </ul>
