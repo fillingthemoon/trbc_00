@@ -51,6 +51,7 @@ a {
   border-radius: 10px;
   padding: 10px 15px 10px 15px;
   color: #F37021; 
+  font-size: 0.8em;
 }
 
 #lang-toggle:hover {
@@ -58,18 +59,19 @@ a {
 }
 
 /* Homepage */
-#img-container {
+.top-img-container {
   position: relative;
   text-align: center;
 }
 
-#img-exterior {
+.top-img-exterior {
   width: 100%;
   filter: brightness(70%);
 }
 
-#img-title {
+.top-img-title {
   font-size: 4em;
+  font-weight: 500;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,6 +116,16 @@ a {
  font-weight: 200;
 }
 
+#cf-text h1 {
+  font-size: 2.5em;
+  margin: 0px 0px 10px 0px;
+}
+
+#cf-text h2 {
+  font-size: 1.5em;
+  font-weight: 400; 
+}
+
 #img-trbc-map {
   width: 694px;
   height: 265px;
@@ -128,6 +140,36 @@ a {
 }
 
 /* About Us */
+#about-us-header-container {
+  text-align: center;
+  padding: 20px 130px 40px 130px;
+}
+
+#about-us-header-container p {
+  font-weight: 200;
+}
+
+.about-us-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 100px 40px 100px;
+}
+
+.about-us-imgs {
+  margin: 30px;
+  width: 50%;
+}
+
+.about-us-text {
+  margin: 30px;
+  width: 50%;
+  font-weight: 200;
+}
+
+#about-us-container hr {
+  width: 80%;
+}
 
 
 /* Join Us */
