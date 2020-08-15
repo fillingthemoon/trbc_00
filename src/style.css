@@ -29,11 +29,6 @@ body {
 
 a {
   text-decoration: none;
-  padding: 0px;
-}
-
-.links {
-  vertical-align: middle;
 }
 
 .nav-links {
@@ -43,6 +38,7 @@ a {
   margin-left: 35px;
   font-weight: 500;
   white-space: nowrap;
+  padding: 10px 0px 10px 0px;
 }
 
 #lang-toggle {
