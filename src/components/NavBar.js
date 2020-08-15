@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
   return (
     <nav className="navbar">
-      <Link to="/">
+      <Link to="/trbc_00/">
         <img id="img-logo" src={require('../imgs/logo.png')} alt="" />
       </Link>
       <ul className="main-nav" id="js-menu">

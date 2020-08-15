@@ -3,7 +3,7 @@ import React from 'react';
 function Missions() {
   return (
     <div>
-      Missions
+      <h1>Missions</h1>
     </div>
   );
 }

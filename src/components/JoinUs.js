@@ -3,7 +3,7 @@ import React from 'react';
 function JoinUs() {
   return (
     <div>
-      Join Us
+      <h1>Join Us</h1>
     </div>
   );
 }

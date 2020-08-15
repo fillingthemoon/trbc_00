@@ -3,7 +3,7 @@ import React from 'react';
 function FacilityBookings() {
   return (
     <div>
-      FacilityBookings 
+      <h1>Facility Bookings</h1>
     </div>
   );
 }

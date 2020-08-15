@@ -3,7 +3,7 @@ import React from 'react';
 function Outreach() {
   return (
     <div>
-      Outreach
+      <h1>Outreach</h1>
     </div>
   );
 }

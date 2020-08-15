@@ -3,7 +3,7 @@ import React from 'react';
 function ImNew() {
   return (
     <div>
-      ImNew
+      <h1>Im New</h1>
     </div>
   );
 }

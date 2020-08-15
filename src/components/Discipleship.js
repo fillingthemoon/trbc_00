@@ -3,7 +3,7 @@ import React from 'react';
 function Discipleship() {
   return (
     <div>
-      Discipleship 
+      <h1>Discipleship</h1>
     </div>
   );
 }
