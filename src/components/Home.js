@@ -9,7 +9,7 @@ function Home() {
           src={require("../imgs/exterior.jpg")} 
           alt="" 
         />
-        <h1 id="img-title">Mission and Vision</h1>
+        <div id="img-title">Mission and Vision</div>
       </div>  
       <div id="mission-vision-container">
         <div id="mv-diagrams-container">
@@ -18,11 +18,17 @@ function Home() {
         <div id="mv-text-container">
           <div id="mv-mission-container">
             <h1>Mission</h1>
-            <p>To Be Disciples Moving as One Body in Christ, Bearing Fruit and Being the Salt and Light of the World.</p>
+            <p>
+              To Be Disciples Moving as One Body in Christ, Bearing Fruit and 
+              Being the Salt and Light of the World.
+            </p>
           </div>
           <div id="mv-vision-container">
             <h1>Vision</h1>
-            <p>To Be Disciples Moving as One Body in Christ, Bearing Fruit and Being the Salt and Light of the World.</p>
+            <p>
+              To Be Disciples Moving as One Body in Christ, 
+              Bearing Fruit and Being the Salt and Light of the World.
+            </p>
           </div>
         </div>
       </div>

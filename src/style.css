@@ -34,6 +34,7 @@ body {
   color: #303030;
   margin-left: 35px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 #lang-toggle {
@@ -45,10 +46,11 @@ body {
 
 /* Homepage */
 #img-container {
+  position: relative;
+  text-align: center;
 }
 
 #img-exterior {
-  position: relative;
   width: 100%;
   filter: brightness(70%);
 }
@@ -56,9 +58,11 @@ body {
 #img-title {
   font-size: 4em;
   position: absolute;
-  top: 60%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 /* Mission, Vision */
@@ -73,7 +77,15 @@ body {
   background-color: #C4C4C4;
   width: 510px;
   height: 482px;
-  margin-right: 20px;
+  margin-right: 40px;
+}
+
+#mv-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 410px;
+  font-weight: 200;
 }
 
 /* Contact Us */
@@ -86,6 +98,7 @@ body {
 
 #cf-text {
  color: #ffffff; 
+ font-weight: 200;
 }
 
 #img-trbc-map {
