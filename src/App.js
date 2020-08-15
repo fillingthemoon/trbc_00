@@ -25,15 +25,15 @@ function App() {
       <div>
         <NavBar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/aboutus" exact component={AboutUs} />
-          <Route path="/joinus" exact component={JoinUs} />
-          <Route path="/imnew" exact component={ImNew} />
-          <Route path="/outreach" exact component={Outreach} />
-          <Route path="/missions" exact component={Missions} />
-          <Route path="/discipleship" exact component={Discipleship} />
-          <Route path="/facilitybookings" exact component={FacilityBookings} />
-          <Route path="/resources" exact component={Resources} />
+          <Route path="/trbc_00/" exact component={Home} />
+          <Route path="/trbc_00/aboutus" exact component={AboutUs} />
+          <Route path="/trbc_00/joinus" exact component={JoinUs} />
+          <Route path="/trbc_00/imnew" exact component={ImNew} />
+          <Route path="/trbc_00/outreach" exact component={Outreach} />
+          <Route path="/trbc_00/missions" exact component={Missions} />
+          <Route path="/trbc_00/discipleship" exact component={Discipleship} />
+          <Route path="/trbc_00/facilitybookings" exact component={FacilityBookings} />
+          <Route path="/trbc_00/resources" exact component={Resources} />
         </Switch>
         <ContactFooter />
       </div>
