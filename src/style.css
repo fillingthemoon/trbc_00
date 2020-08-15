@@ -27,10 +27,18 @@ body {
   height: 70px;
 }
 
+a {
+  text-decoration: none;
+  padding: 0px;
+}
+
+.links {
+  vertical-align: middle;
+}
+
 .nav-links {
   font-family: 'Heebo', sans-serif;
   font-size: 1em;
-  text-decoration: none;
   color: #303030;
   margin-left: 35px;
   font-weight: 500;
@@ -105,4 +113,11 @@ body {
   width: 694px;
   height: 265px;
   margin-left: 70px;
+}
+
+#cf-copyright {
+  padding: 20px;
+  text-align: right;
+  color: #F2F2F2;
+  background-color: #333333;
 }
