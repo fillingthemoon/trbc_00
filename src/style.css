@@ -39,6 +39,11 @@ a {
   font-weight: 500;
   white-space: nowrap;
   padding: 10px 0px 10px 0px;
+  border-bottom: solid 2px transparent;
+}
+
+.nav-links:hover {
+  border-bottom: solid 2px #F37021;
 }
 
 #lang-toggle {
@@ -46,6 +51,10 @@ a {
   border-radius: 10px;
   padding: 10px 15px 10px 15px;
   color: #F37021; 
+}
+
+#lang-toggle:hover {
+  border-bottom: solid 2px transparent;
 }
 
 /* Homepage */
