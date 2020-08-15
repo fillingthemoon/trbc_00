@@ -11,6 +11,7 @@ body {
   justify-content: space-between;
   height: 121px;
   align-items: center;
+  overflow: auto;
 }
 
 .main-nav {
