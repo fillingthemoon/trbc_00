@@ -1,29 +1,29 @@
-import React from 'react';
-import { 
-  BrowserRouter as Router, 
-  Switch, 
-  Route
-} from 'react-router-dom';
+import React from "react";
+import { Layout, Menu, Breadcrumb } from "antd";
 
-import './style.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-import JoinUs from './components/JoinUs';
-import ImNew from './components/ImNew';
-import Outreach from './components/Outreach';
-import Missions from './components/Missions';
-import Discipleship from './components/Discipleship';
-import FacilityBookings from './components/FacilityBookings';
-import Resources from './components/Resources';
-import ContactFooter from './components/ContactFooter';
+import "./style.less";
+import NavBarAntd from "./components/NavBarAntd";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import JoinUs from "./pages/JoinUs";
+import ImNew from "./pages/ImNew";
+import Outreach from "./pages/Outreach";
+import Missions from "./pages/Missions";
+import Discipleship from "./pages/Discipleship";
+import FacilityBookings from "./pages/FacilityBookings";
+import Resources from "./pages/Resources";
+import ContactFooter from "./components/ContactFooter";
 
 function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+        {/* <NavBar/> */}
+        <NavBarAntd />
+
         <Switch>
           <Route path="/trbc_00/" exact component={Home} />
           <Route path="/trbc_00/aboutus" exact component={AboutUs} />
@@ -32,9 +32,14 @@ function App() {
           <Route path="/trbc_00/outreach" exact component={Outreach} />
           <Route path="/trbc_00/missions" exact component={Missions} />
           <Route path="/trbc_00/discipleship" exact component={Discipleship} />
-          <Route path="/trbc_00/facilitybookings" exact component={FacilityBookings} />
+          <Route
+            path="/trbc_00/facilitybookings"
+            exact
+            component={FacilityBookings}
+          />
           <Route path="/trbc_00/resources" exact component={Resources} />
         </Switch>
+
         <ContactFooter />
       </div>
     </Router>
