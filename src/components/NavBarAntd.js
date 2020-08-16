@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Menu, Dropdown, Avatar, Row, Col, Space } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import useWindowSize from "../hooks/useWindowSize";
+import { Link } from 'react-router-dom';
 const { SubMenu } = Menu;
 
 const NavBarAntd = () => {
@@ -19,17 +20,43 @@ const NavBarAntd = () => {
   const menu = (
     <Menu mode="horizontal" onClick={handleClick} selectedKeys={current} style={{padding:"10px"}}>
 
-      <Menu.Item key="logo">{trbcImage}</Menu.Item>
+      <Menu.Item key="logo">
+      <Link to="/trbc_00/" >
+        {trbcImage}
+        </Link>
+        </Menu.Item>
+    
+      <Menu.Item key="home">
+      <Link to="/trbc_00/" >Home
+      </Link></Menu.Item>
 
-      <Menu.Item key="home">Home</Menu.Item>
-      <Menu.Item key="about us">About Us</Menu.Item>
-      <Menu.Item key="join us">Join Us</Menu.Item>
-      <Menu.Item key="i'm new">I'm New</Menu.Item>
-      <Menu.Item key="outreach">Outreach</Menu.Item>
-      <Menu.Item key="missions">Missions</Menu.Item>
-      <Menu.Item key="discipleship">Discipleship</Menu.Item>
-      <Menu.Item key="facilities">Facility Bookings</Menu.Item>
-      <Menu.Item key="resoucres">Resources</Menu.Item>
+
+      <Menu.Item key="about us">
+      <Link to="/trbc_00/aboutus">About Us</Link>
+      </Menu.Item>
+  
+  
+      <Menu.Item key="join us">
+      <Link to="/trbc_00/joinus" >
+        Join Us
+        </Link>
+        </Menu.Item>
+
+      <Menu.Item key="i'm new">
+      <Link to="/trbc_00/imnew" >I'm New
+      </Link></Menu.Item>
+      <Menu.Item key="outreach">
+      <Link to="/trbc_00/outreach" >Outreach</Link></Menu.Item>
+      <Menu.Item key="missions"> <Link to="/trbc_00/missions" >
+        Missions</Link></Menu.Item>
+      <Menu.Item key="discipleship">
+      <Link to="/trbc_00/discipleship" >Discipleship
+      </Link></Menu.Item>
+      <Menu.Item key="facilities">
+      <Link to="/trbc_00/facilitybookings">Facility Bookings
+      </Link></Menu.Item>
+      <Menu.Item key="resoucres">
+      <Link to="/trbc_00/resources" >Resources</Link></Menu.Item>
       <SubMenu title={<span>Congregations</span>}>
         <Menu.ItemGroup>
           <Menu.Item key="english">English</Menu.Item>
