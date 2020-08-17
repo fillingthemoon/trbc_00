@@ -8,31 +8,17 @@ const { SubMenu } = Menu;
 
 const NavBarAntd = () => {
   const [windowSize, useSize] = useWindowSize();
-<<<<<<< HEAD
-  const [current, setCurrent] = useState('home');
-  const [language, setLanguage] = useState('ENGLISH')
-=======
   const [current, setCurrent] = useState("home");
   const [language, setLanguage] = useState("English");
->>>>>>> separated Logo from NavBar
   const handleClick = (e) => {
     setCurrent(e.key);
   };
   const changeLanguage = () => {
-<<<<<<< HEAD
-    if (language === 'ENGLISH') {
-      return setLanguage('CHINESE');
-    }
-    return setLanguage('ENGLISH');
-  };
-
-=======
     if (language == "English") {
       return setLanguage("Chinese");
     }
     return setLanguage("English");
   };
->>>>>>> separated Logo from NavBar
   const trbcImage = (
     <img
       style={{ maxHeight: '100px', maxWidth: '150px' }}
@@ -102,12 +88,21 @@ const NavBarAntd = () => {
   const dropDown = (
     <div
       style={{
+<<<<<<< HEAD
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: 'white',
         padding: '10px',
         maxHeight: '80px',
+=======
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: "white",
+        padding: "10px",
+        maxHeight: "85px",
+>>>>>>> separated Logo from NavBar
       }}
     >
       <Link to="/trbc_00/">{trbcImage}</Link>
