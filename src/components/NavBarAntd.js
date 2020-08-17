@@ -88,21 +88,12 @@ const NavBarAntd = () => {
   const dropDown = (
     <div
       style={{
-<<<<<<< HEAD
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        backgroundColor: 'white',
-        padding: '10px',
-        maxHeight: '80px',
-=======
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: "white",
         padding: "10px",
         maxHeight: "85px",
->>>>>>> separated Logo from NavBar
       }}
     >
       <Link to="/trbc_00/">{trbcImage}</Link>
