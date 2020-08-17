@@ -1,35 +1,39 @@
-import React, { useState } from "react";
-import { Menu, Dropdown, Button } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
-import useWindowSize from "../hooks/useWindowSize";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Menu, Dropdown, Button } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
+import useWindowSize from '../hooks/useWindowSize';
+
 const { SubMenu } = Menu;
 
 const NavBarAntd = () => {
   const [windowSize, useSize] = useWindowSize();
-  const [current, setCurrent] = useState("home");
-  const [language, setLanguage] = useState("English")
+  const [current, setCurrent] = useState('home');
+  const [language, setLanguage] = useState('ENGLISH')
   const handleClick = (e) => {
     setCurrent(e.key);
   };
-  const changeLanguage =()=>{
-    if (language =="English"){
-      return setLanguage("Chinese") 
+  const changeLanguage = () => {
+    if (language === 'ENGLISH') {
+      return setLanguage('CHINESE');
     }
-    return setLanguage("English")
-  }
+    return setLanguage('ENGLISH');
+  };
+
   const trbcImage = (
     <img
-      style={{ maxHeight: "100px", maxWidth: "150px" }}
-      src={require("../imgs/logo.png")}
+      style={{ maxHeight: '100px', maxWidth: '150px' }}
+      src={require('../imgs/logo.png')}
+      alt=""
     />
   );
+
   const menu = (
     <Menu
       mode="horizontal"
       onClick={handleClick}
       selectedKeys={current}
-      style={{ padding: "10px" }}
+      style={{ padding: '25px', border: 'None' }}
     >
       {windowSize > 1250 ? (
         <Menu.Item key="logo">
@@ -52,7 +56,7 @@ const NavBarAntd = () => {
         <Link to="/trbc_00/outreach">Outreach</Link>
       </Menu.Item>
       <Menu.Item key="missions">
-        {" "}
+        {' '}
         <Link to="/trbc_00/missions">Missions</Link>
       </Menu.Item>
       <Menu.Item key="discipleship">
@@ -65,32 +69,36 @@ const NavBarAntd = () => {
         <Link to="/trbc_00/resources">Resources</Link>
       </Menu.Item>
       <Menu.Item key="language">
-      <Button onClick={changeLanguage} style ={{backgroundColor:"#ffe7ba", color:"#fa8c16", borderRadius: "5px",borderStyle:"none"}}>{language}</Button>
-      </Menu.Item>     
+      <Button 
+        onClick={changeLanguage} 
+        style={{ backgroundColor:"#ffe7ba", color:"#fa8c16", borderRadius: "5px",borderStyle:"none" }}
+        >{language}
+      </Button>
+      </Menu.Item>
     </Menu>
   );
+
   const dropDown = (
     <div
       style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        backgroundColor: "white",
-        padding: "10px",
-        maxHeight: "80px",
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: 'white',
+        padding: '10px',
+        maxHeight: '80px',
       }}
     >
       <Link to="/trbc_00/">{trbcImage}</Link>
       <Dropdown overlay={menu}>
-        <Button icon={<MenuOutlined style={{ fontSize: "25px" }} />} />
+        <Button icon={<MenuOutlined style={{ fontSize: '25px' }} />} />
       </Dropdown>
     </div>
   );
 
   return (
     <>
-      {windowSize > 1250 ? 
-       menu : dropDown}
+      {windowSize > 1250 ? menu : dropDown}
       {console.log(windowSize)}
     </>
   );
