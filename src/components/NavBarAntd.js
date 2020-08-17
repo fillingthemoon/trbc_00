@@ -93,7 +93,7 @@ const NavBarAntd = () => {
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: "white",
-        padding: "50px",
+        padding: "55px",
         maxHeight: "80px",
       }}
     >
