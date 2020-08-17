@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Menu, Dropdown, Button } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
-import useWindowSize from '../hooks/useWindowSize';
+import React, { useState } from "react";
+import { Menu, Dropdown, Button } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import useWindowSize from "../hooks/useWindowSize";
 
 const { SubMenu } = Menu;
 
@@ -21,24 +21,19 @@ const NavBarAntd = () => {
   };
   const trbcImage = (
     <img
-      style={{ maxHeight: '100px', maxWidth: '150px' }}
-      src={require('../imgs/logo.png')}
+      style={{ maxHeight: "100px", maxWidth: "150px" }}
+      src={require("../imgs/logo.png")}
       alt=""
     />
   );
 
   const menu = (
-    <div style ={{display:"flex",justifyContent: "space-between", padding: "10px"}}>
-      {windowSize > 1250 ? (
-        <div key="logo">
-          <Link to="/trbc_00/">{trbcImage}</Link>
-        </div>
-      ) : null}
+    <>
       <Menu
         mode="horizontal"
         onClick={handleClick}
         selectedKeys={current}
-        style={{ padding: "10px", borderStyle:"none" }}
+        style={{ padding: "10px", borderStyle: "none" }}
       >
         <Menu.Item key="home">
           <Link to="/trbc_00/">Home</Link>
@@ -82,10 +77,18 @@ const NavBarAntd = () => {
           </Button>
         </Menu.Item>
       </Menu>
-    </div>
+    </>
   );
 
   const dropDown = (
+    <>
+      <Dropdown overlay={menu}>
+        <Button icon={<MenuOutlined style={{ fontSize: "25px" }} />} />
+      </Dropdown>
+    </>
+  );
+
+  return (
     <div
       style={{
         display: "flex",
@@ -97,17 +100,9 @@ const NavBarAntd = () => {
       }}
     >
       <Link to="/trbc_00/">{trbcImage}</Link>
-      <Dropdown overlay={menu}>
-        <Button icon={<MenuOutlined style={{ fontSize: '25px' }} />} />
-      </Dropdown>
-    </div>
-  );
-
-  return (
-    <>
       {windowSize > 1250 ? menu : dropDown}
       {console.log(windowSize)}
-    </>
+    </div>
   );
 };
 export default NavBarAntd;
