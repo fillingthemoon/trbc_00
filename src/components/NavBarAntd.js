@@ -33,7 +33,7 @@ const NavBarAntd = () => {
       mode="horizontal"
       onClick={handleClick}
       selectedKeys={current}
-      style={{ padding: '25px', border: 'None' }}
+      style={{ padding: '20px 30px 30px 30px', border: 'None' }}
     >
       {windowSize > 1250 ? (
         <Menu.Item key="logo">
