@@ -31,7 +31,7 @@ const NavBarAntd = () => {
         mode= {windowSize > 1250 ? "horizontal" : "vertical"}
         onClick={(e)=> {setCurrent(e.key)}}
         selectedKeys={current}
-        style={{ border: 'None' }}
+        style={{ border: 'None', padding: '10px' }}
       >
         <Menu.Item key="home">
           <Link to="/trbc_00/">Home</Link>
