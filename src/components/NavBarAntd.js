@@ -33,7 +33,7 @@ const NavBarAntd = () => {
         mode="horizontal"
         onClick={handleClick}
         selectedKeys={current}
-        style={{ padding: '20px 30px 30px 30px', border: 'None' }}
+        style={{ border: 'None' }}
       >
         <Menu.Item key="home">
           <Link to="/trbc_00/">Home</Link>
@@ -95,7 +95,7 @@ const NavBarAntd = () => {
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: "white",
-        padding: "10px",
+        padding: "50px",
         maxHeight: "80px",
       }}
     >
