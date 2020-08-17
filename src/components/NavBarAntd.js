@@ -8,18 +8,31 @@ const { SubMenu } = Menu;
 
 const NavBarAntd = () => {
   const [windowSize, useSize] = useWindowSize();
+<<<<<<< HEAD
   const [current, setCurrent] = useState('home');
   const [language, setLanguage] = useState('ENGLISH')
+=======
+  const [current, setCurrent] = useState("home");
+  const [language, setLanguage] = useState("English");
+>>>>>>> separated Logo from NavBar
   const handleClick = (e) => {
     setCurrent(e.key);
   };
   const changeLanguage = () => {
+<<<<<<< HEAD
     if (language === 'ENGLISH') {
       return setLanguage('CHINESE');
     }
     return setLanguage('ENGLISH');
   };
 
+=======
+    if (language == "English") {
+      return setLanguage("Chinese");
+    }
+    return setLanguage("English");
+  };
+>>>>>>> separated Logo from NavBar
   const trbcImage = (
     <img
       style={{ maxHeight: '100px', maxWidth: '150px' }}
@@ -29,53 +42,61 @@ const NavBarAntd = () => {
   );
 
   const menu = (
-    <Menu
-      mode="horizontal"
-      onClick={handleClick}
-      selectedKeys={current}
-      style={{ padding: '25px', border: 'None' }}
-    >
+    <div style ={{display:"flex",justifyContent: "space-between", padding: "10px"}}>
       {windowSize > 1250 ? (
-        <Menu.Item key="logo">
+        <div key="logo">
           <Link to="/trbc_00/">{trbcImage}</Link>
-        </Menu.Item>
+        </div>
       ) : null}
-      <Menu.Item key="home">
-        <Link to="/trbc_00/">Home</Link>
-      </Menu.Item>
-      <Menu.Item key="about us">
-        <Link to="/trbc_00/aboutus">About Us</Link>
-      </Menu.Item>
-      <Menu.Item key="join us">
-        <Link to="/trbc_00/joinus">Join Us</Link>
-      </Menu.Item>
-      <Menu.Item key="i'm new">
-        <Link to="/trbc_00/imnew">I'm New</Link>
-      </Menu.Item>
-      <Menu.Item key="outreach">
-        <Link to="/trbc_00/outreach">Outreach</Link>
-      </Menu.Item>
-      <Menu.Item key="missions">
-        {' '}
-        <Link to="/trbc_00/missions">Missions</Link>
-      </Menu.Item>
-      <Menu.Item key="discipleship">
-        <Link to="/trbc_00/discipleship">Discipleship</Link>
-      </Menu.Item>
-      <Menu.Item key="facilities">
-        <Link to="/trbc_00/facilitybookings">Facility Bookings</Link>
-      </Menu.Item>
-      <Menu.Item key="resoucres">
-        <Link to="/trbc_00/resources">Resources</Link>
-      </Menu.Item>
-      <Menu.Item key="language">
-      <Button 
-        onClick={changeLanguage} 
-        style={{ backgroundColor:"#ffe7ba", color:"#fa8c16", borderRadius: "5px",borderStyle:"none" }}
-        >{language}
-      </Button>
-      </Menu.Item>
-    </Menu>
+      <Menu
+        mode="horizontal"
+        onClick={handleClick}
+        selectedKeys={current}
+        style={{ padding: "10px", borderStyle:"none" }}
+      >
+        <Menu.Item key="home">
+          <Link to="/trbc_00/">Home</Link>
+        </Menu.Item>
+        <Menu.Item key="about us">
+          <Link to="/trbc_00/aboutus">About Us</Link>
+        </Menu.Item>
+        <Menu.Item key="join us">
+          <Link to="/trbc_00/joinus">Join Us</Link>
+        </Menu.Item>
+        <Menu.Item key="i'm new">
+          <Link to="/trbc_00/imnew">I'm New</Link>
+        </Menu.Item>
+        <Menu.Item key="outreach">
+          <Link to="/trbc_00/outreach">Outreach</Link>
+        </Menu.Item>
+        <Menu.Item key="missions">
+          {" "}
+          <Link to="/trbc_00/missions">Missions</Link>
+        </Menu.Item>
+        <Menu.Item key="discipleship">
+          <Link to="/trbc_00/discipleship">Discipleship</Link>
+        </Menu.Item>
+        <Menu.Item key="facilities">
+          <Link to="/trbc_00/facilitybookings">Facility Bookings</Link>
+        </Menu.Item>
+        <Menu.Item key="resoucres">
+          <Link to="/trbc_00/resources">Resources</Link>
+        </Menu.Item>
+        <Menu.Item key="language">
+          <Button
+            onClick={changeLanguage}
+            style={{
+              backgroundColor: "#ffe7ba",
+              color: "#fa8c16",
+              borderRadius: "5px",
+              borderStyle: "none",
+            }}
+          >
+            {language}
+          </Button>
+        </Menu.Item>
+      </Menu>
+    </div>
   );
 
   const dropDown = (
