@@ -9,15 +9,15 @@ const { SubMenu } = Menu;
 const NavBarAntd = () => {
   const [windowSize, useSize] = useWindowSize();
   const [current, setCurrent] = useState("home");
-  const [language, setLanguage] = useState("English");
+  const [language, setLanguage] = useState("ENGLISH");
   const handleClick = (e) => {
     setCurrent(e.key);
   };
   const changeLanguage = () => {
-    if (language == "English") {
-      return setLanguage("Chinese");
+    if (language == "ENGLISH") {
+      return setLanguage("CHINESE");
     }
-    return setLanguage("English");
+    return setLanguage("ENGLISH");
   };
   const trbcImage = (
     <img
@@ -33,7 +33,7 @@ const NavBarAntd = () => {
         mode="horizontal"
         onClick={handleClick}
         selectedKeys={current}
-        style={{ padding: "10px", borderStyle: "none" }}
+        style={{ padding: '20px 30px 30px 30px', border: 'None' }}
       >
         <Menu.Item key="home">
           <Link to="/trbc_00/">Home</Link>
@@ -96,7 +96,7 @@ const NavBarAntd = () => {
         alignItems: "center",
         backgroundColor: "white",
         padding: "10px",
-        maxHeight: "85px",
+        maxHeight: "80px",
       }}
     >
       <Link to="/trbc_00/">{trbcImage}</Link>
