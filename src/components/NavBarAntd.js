@@ -10,9 +10,7 @@ const NavBarAntd = () => {
   const [windowSize, useSize] = useWindowSize();
   const [current, setCurrent] = useState("home");
   const [language, setLanguage] = useState("ENGLISH");
-  const handleClick = (e) => {
-    setCurrent(e.key);
-  };
+
   const changeLanguage = () => {
     if (language == "ENGLISH") {
       return setLanguage("CHINESE");
@@ -30,8 +28,8 @@ const NavBarAntd = () => {
   const menu = (
     <>
       <Menu
-        mode="horizontal"
-        onClick={handleClick}
+        mode= {windowSize > 1250 ? "horizontal" : "vertical"}
+        onClick={(e)=> {setCurrent(e.key)}}
         selectedKeys={current}
         style={{ border: 'None' }}
       >
