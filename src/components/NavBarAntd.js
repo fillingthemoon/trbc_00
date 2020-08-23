@@ -13,7 +13,7 @@ const NavBarAntd = () => {
 
   const changeLanguage = () => {
     if (language === "ENGLISH") {
-      return setLanguage("CHINESE");
+      return setLanguage("中文");
     }
     return setLanguage("ENGLISH");
   };
@@ -39,7 +39,8 @@ const NavBarAntd = () => {
           <Link to="/trbc_00/">Home</Link>
         </Menu.Item>
 
-        <SubMenu key="aboutUs" title="About Us">
+        <SubMenu key="aboutUs" style={{fontSize: "17px"}} title="About Us"> 
+        {/* Need find way to change font size */}
           <Menu.Item key="aboutUs1"><Link to="/trbc_00/vision">Vision & Mission</Link></Menu.Item>
           <Menu.Item key="aboutUs2"><Link to="/trbc_00/ourhistory">Our History</Link></Menu.Item>
           <Menu.Item key="aboutUs3"><Link to="/trbc_00/ourteam">Our Team</Link></Menu.Item>
