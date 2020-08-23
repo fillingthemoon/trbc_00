@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AboutUs() {
+function OurHistory() {
   return (
     <div id="about-us-container">
       <div className="top-img-container">
@@ -9,7 +9,7 @@ function AboutUs() {
           src={require('../imgs/exterior.jpg')}
           alt=""
         />
-        <div className="top-img-title">About Us</div>
+        <div className="top-img-title">Our History</div>
       </div>
 
       <div id="about-us-header-container">
@@ -154,4 +154,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default OurHistory;

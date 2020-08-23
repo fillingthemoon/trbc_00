@@ -12,7 +12,7 @@ const NavBarAntd = () => {
   const [language, setLanguage] = useState("ENGLISH");
 
   const changeLanguage = () => {
-    if (language == "ENGLISH") {
+    if (language === "ENGLISH") {
       return setLanguage("CHINESE");
     }
     return setLanguage("ENGLISH");
@@ -28,28 +28,34 @@ const NavBarAntd = () => {
   const menu = (
     <>
       <Menu
-        mode= {windowSize > 1250 ? "horizontal" : "vertical"}
-        onClick={(e)=> {setCurrent(e.key)}}
+        mode={windowSize > 1370 ? "horizontal" : "vertical"}
+        onClick={(e) => {
+          setCurrent(e.key);
+        }}
         selectedKeys={current}
-        style={{ border: 'None', padding: '10px' }}
+        style={{ border: "None", padding: "10px" }}
       >
-        <Menu.Item key="home">
+        <Menu.Item key="home" title="Home" >
           <Link to="/trbc_00/">Home</Link>
         </Menu.Item>
-        <Menu.Item key="about us">
-          <Link to="/trbc_00/aboutus">About Us</Link>
-        </Menu.Item>
-        <Menu.Item key="join us">
+
+        <SubMenu key="aboutUs" title="About Us">
+          <Menu.Item key="aboutUs1"><Link to="/trbc_00/vision">Vision & Mission</Link></Menu.Item>
+          <Menu.Item key="aboutUs2"><Link to="/trbc_00/ourhistory">Our History</Link></Menu.Item>
+          <Menu.Item key="aboutUs3"><Link to="/trbc_00/ourteam">Our Team</Link></Menu.Item>
+          <Menu.Item key="aboutUs4"><Link to="/trbc_00/statement">Statement of Faith</Link></Menu.Item>
+        </SubMenu>
+
+        <Menu.Item key="joinUs">
           <Link to="/trbc_00/joinus">Join Us</Link>
         </Menu.Item>
-        <Menu.Item key="i'm new">
+        <Menu.Item key="imNew">
           <Link to="/trbc_00/imnew">I'm New</Link>
         </Menu.Item>
         <Menu.Item key="outreach">
           <Link to="/trbc_00/outreach">Outreach</Link>
         </Menu.Item>
         <Menu.Item key="missions">
-          {" "}
           <Link to="/trbc_00/missions">Missions</Link>
         </Menu.Item>
         <Menu.Item key="discipleship">
@@ -98,8 +104,8 @@ const NavBarAntd = () => {
       }}
     >
       <Link to="/trbc_00/">{trbcImage}</Link>
-      {windowSize > 1250 ? menu : dropDown}
       {console.log(windowSize)}
+      {windowSize > 1370 ? menu : dropDown}
     </div>
   );
 };
