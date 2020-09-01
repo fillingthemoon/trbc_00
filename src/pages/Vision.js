@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Home() {
+function Vision() {
   return (
     <div id="home-container">
       <div className="top-img-container">
@@ -35,4 +35,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Vision;
