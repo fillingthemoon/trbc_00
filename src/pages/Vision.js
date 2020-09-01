@@ -18,6 +18,7 @@ function Vision() {
         <div id="mv-text-container">
           <div id="mv-mission-container">
             <h1>Mission</h1>
+            <hr id="mv-thickline" />
             <p>
               To Be Disciples Moving as One Body in Christ, Bearing Fruit and
               Being the Salt and Light of the World.
@@ -25,6 +26,7 @@ function Vision() {
           </div>
           <div id="mv-vision-container">
             <h1>Vision</h1>
+            <hr id="mv-thickline" />
             <p>
               One Church Growing Inwardly and Outwardly
             </p>
