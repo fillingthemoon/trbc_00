@@ -40,7 +40,7 @@ const NavBarAntd = () => {
         </Menu.Item>
 
         <SubMenu key="aboutUs" style={{fontSize: "17px"}} title="About Us"> 
-        {/* Need find way to change font size */}
+        {/* Need find way to change font */}
           <Menu.Item key="aboutUs1"><Link to="/trbc_00/vision">Vision & Mission</Link></Menu.Item>
           <Menu.Item key="aboutUs2"><Link to="/trbc_00/ourhistory">Our History</Link></Menu.Item>
           <Menu.Item key="aboutUs3"><Link to="/trbc_00/ourteam">Our Team</Link></Menu.Item>
