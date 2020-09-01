@@ -6,6 +6,7 @@ function ContactFooter() {
       <div id="contact-footer-container">
         <div id="cf-text">
           <h1>Contact Us</h1>
+          <hr id="contact-us-thickline" />
           <h2>Singapore Thomson Road Baptist Church</h2>
           <p>45 Thomson Road Singapore 307584</p>
           <p>admin@trbc.org.sg</p>
