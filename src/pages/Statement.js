@@ -3,17 +3,7 @@ import { Typography, Row, Col, Card } from "antd";
 function Statement() {
   const { Title } = Typography;
   var styles = {
-    container: {
-      width: "80%",
-      margin: "auto",
-      textAlign: "center",
-    },
-    thickLine: {
-      width: "35px",
-      height: "4px",
-      backgroundColor: "#F37021",
-      borderStyle: "none",
-    },
+
 
     verseStyle: {
       textAlign: "right",
@@ -73,11 +63,11 @@ function Statement() {
         />
         <div className="top-img-title">Statement of Faith</div>
       </div>
-      <div style={styles.container}>
+      <div className="main-container">
         <br />
         <br />
         <Title>We Believe</Title>
-        <hr style={styles.thickLine}></hr>
+        <hr className="thick-line"></hr>
         <br />
         <br />
         <Row gutter={[60, 60]}>

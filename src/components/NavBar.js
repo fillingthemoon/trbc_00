@@ -14,9 +14,7 @@ function NavBar() {
         <Link to="/trbc_00/aboutus" className="main-nav-link">
           <li className="nav-links">About Us</li>
         </Link>
-        <Link to="/trbc_00/joinus" className="main-nav-link">
-          <li className="nav-links">Join Us</li>
-        </Link>
+
         <Link to="/trbc_00/imnew" className="main-nav-link">
           <li className="nav-links">I'm New</li>
         </Link>
