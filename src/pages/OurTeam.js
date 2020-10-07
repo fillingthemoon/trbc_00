@@ -4,11 +4,7 @@ import { UserOutlined } from "@ant-design/icons";
 function OurTeam() {
   const { Title } = Typography;
   var styles = {
-    container: {
-      width: "80%",
-      margin: "auto",
-      textAlign: "center",
-    },
+
     thickLine: {
       width: "35px",
       height: "4px",
@@ -138,7 +134,7 @@ function OurTeam() {
       ],
     },
   ];
-  var key = 0;
+
   return (
     <>
       <div className="top-img-container">
@@ -149,11 +145,11 @@ function OurTeam() {
         />
         <div className="top-img-title">Our Team</div>
       </div>
-      <div style={styles.container}>
+      <div className="main-container">
         <br />
         <br />
         <Title>Pastoral</Title>
-        <hr style={styles.thickLine}></hr>
+        <hr className="thick-line"></hr>
 
         {/* Use map to render reusable HTML content */}
         {data.map((group) => {
@@ -167,7 +163,7 @@ function OurTeam() {
                   <Title style={{ textAlign: "center" }}>
                     {group.groupName}
                   </Title>
-                  <hr style={styles.thickLine}></hr>
+                  <hr className="thick-line"></hr>
                   <br />
                   <br />
                 </>
@@ -188,7 +184,7 @@ function OurTeam() {
                 }
               >
                 {group.staff.map((staff) => {
-                    key++
+          
                   return (
                     <Col
                       sm={24}
