@@ -35,41 +35,104 @@ const NavBarAntd = () => {
         selectedKeys={current}
         style={{ border: "None", padding: "10px" }}
       >
-        <Menu.Item key="home" title="Home" >
+        <Menu.Item key="home" title="Home">
           <Link to="/trbc_00/">Home</Link>
         </Menu.Item>
 
-        <SubMenu key="aboutUs" style={{fontSize: "17px"}} title="About Us"> 
-        {/* Need find way to change font */}
-          <Menu.Item key="aboutUs1"><Link to="/trbc_00/vision">Vision & Mission</Link></Menu.Item>
-          <Menu.Item key="aboutUs2"><Link to="/trbc_00/ourhistory">Our History</Link></Menu.Item>
-          <Menu.Item key="aboutUs3"><Link to="/trbc_00/ourteam">Our Team</Link></Menu.Item>
-          <Menu.Item key="aboutUs4"><Link to="/trbc_00/statement">Statement of Faith</Link></Menu.Item>
+        <SubMenu key="aboutUs" style={{ fontSize: "17px" }} title="About Us">
+          {/* Need find way to change font */}
+          <Menu.Item key="aboutUs1">
+            <Link to="/trbc_00/vision">Vision & Mission</Link>
+          </Menu.Item>
+          <Menu.Item key="aboutUs2">
+            <Link to="/trbc_00/ourhistory">Our History</Link>
+          </Menu.Item>
+          <Menu.Item key="aboutUs3">
+            <Link to="/trbc_00/ourteam">Our Team</Link>
+          </Menu.Item>
+          <Menu.Item key="aboutUs4">
+            <Link to="/trbc_00/statement">Statement of Faith</Link>
+          </Menu.Item>
         </SubMenu>
-        <SubMenu key="joinUs" style={{fontSize: "17px"}} title="Join Us"> 
-        {/* Need find way to change font */}
-          <Menu.Item key="services"><Link to="/trbc_00/services">Services</Link></Menu.Item>
-          <Menu.Item key="church-wide"><Link to="/trbc_00/church-wide">Church-Wide</Link></Menu.Item>
+        <SubMenu key="joinUs" style={{ fontSize: "17px" }} title="Join Us">
+          {/* Need find way to change font */}
+          <Menu.Item key="services">
+            <Link to="/trbc_00/services">Services</Link>
+          </Menu.Item>
+          {/* <Menu.Item key="church-wide"><Link to="/trbc_00/church-wide">Church-Wide</Link></Menu.Item> */}
 
-          <SubMenu key="tc" style={{fontSize: "17px"}} title="Teo Chew/Chinese Congregation"> 
-        {/* Need find way to change font */}
-          <Menu.Item key="tc/sundayschool"><Link to="/trbc_00/tc/sundayschool">Sunday School</Link></Menu.Item>
-          <Menu.Item key="tc/prayermeeting"><Link to="/trbc_00/tc/prayermeeting">Prayer Meetings</Link></Menu.Item>
-          <Menu.Item key="tc/connectgroups"><Link to="/trbc_00/tc/connectgroups">Connect Groups</Link></Menu.Item>
-        </SubMenu>
-        <SubMenu key="sunset" style={{fontSize: "17px"}} title="Sunset Congregation"> 
-        {/* Need find way to change font */}
-          <Menu.Item key="s/sundayschool"><Link to="/trbc_00/s/sundayschool">Sunday School</Link></Menu.Item>
-          <Menu.Item key="s/prayermeeting"><Link to="/trbc_00/s/prayermeeting">Prayer Meetings</Link></Menu.Item>
-          <Menu.Item key="s/connectgroups"><Link to="/trbc_00/s/connectgroups">Connect Groups</Link></Menu.Item>
-        </SubMenu>
-        <SubMenu key="english" style={{fontSize: "17px"}} title="English Congregation"> 
-        {/* Need find way to change font */}
-          <Menu.Item key="e/sundayschool"><Link to="/trbc_00/e/sundayschool">Sunday School</Link></Menu.Item>
-          <Menu.Item key="e/prayermeeting"><Link to="/trbc_00/e/prayermeeting">Prayer Meetings</Link></Menu.Item>
-          <Menu.Item key="e/connectgroups"><Link to="/trbc_00/e/connectgroups">Connect Groups</Link></Menu.Item>
-        </SubMenu>
-          
+          <SubMenu
+            key="tc"
+            style={{ fontSize: "17px" }}
+            title="Teo Chew/Chinese Congregation"
+          >
+            {/* Need find way to change font */}
+            <Menu.Item key="tc/sundayschool">
+              <Link to="/trbc_00/services/tc-main">Main</Link>
+            </Menu.Item>
+            <Menu.Item key="tc/prayermeeting">
+              <Link to="/trbc_00/services/tc-prayermeeting">
+                Prayer Meetings
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="tc/connectgroups">
+              <Link to="/trbc_00/services/tc-cellgroup">Cell Groups</Link>
+            </Menu.Item>
+            <Menu.Item key="tc/youth">
+              <Link to="/trbc_00/services/tc-youth">Youth</Link>
+            </Menu.Item>
+            <Menu.Item key="tc/children">
+              <Link to="/trbc_00/services/tc-children">Children</Link>
+            </Menu.Item>
+          </SubMenu>
+          <SubMenu
+            key="sunset"
+            style={{ fontSize: "17px" }}
+            title="Sunset Congregation"
+          >
+            {/* Need find way to change font */}
+            <Menu.Item key="s/sundayschool">
+              <Link to="/trbc_00/services/ss-main">Main</Link>
+            </Menu.Item>
+            <Menu.Item key="s/prayermeeting">
+              <Link to="/trbc_00/services/ss-prayermeeting">
+                Prayer Meetings
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="s/connectgroups">
+              <Link to="/trbc_00/services/ss-cellgroup">Cell Groups</Link>
+            </Menu.Item>
+            <Menu.Item key="s/youth">
+              <Link to="/trbc_00/services/ss-youth">Youth</Link>
+            </Menu.Item>
+            <Menu.Item key="s/children">
+              <Link to="/trbc_00/services/ss-children">Children</Link>
+            </Menu.Item>
+          </SubMenu>
+          <SubMenu
+            key="english"
+            style={{ fontSize: "17px" }}
+            title="English Congregation"
+          >
+            {/* Need find way to change font */}
+            <Menu.Item key="e/sundayschool">
+              <Link to="/trbc_00/services/e-main">Main</Link>
+            </Menu.Item>
+            <Menu.Item key="e/prayermeeting">
+              <Link to="/trbc_00/services/e-prayermeeting">
+                Prayer Meetings
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="e/connectgroups">
+              <Link to="/trbc_00/services/e-cellgroup">Cell Groups</Link>
+            </Menu.Item>
+            <Menu.Item key="e/youth">
+              <Link to="/trbc_00/services/e-youth">Youth</Link>
+            </Menu.Item>
+            <Menu.Item key="e/children">
+              <Link to="/trbc_00/services/e-children">Children</Link>
+            </Menu.Item>
+          </SubMenu>
         </SubMenu>
         <Menu.Item key="imNew">
           <Link to="/trbc_00/imnew">I'm New</Link>
