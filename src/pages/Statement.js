@@ -81,7 +81,7 @@ function Statement() {
               >
                 <Card
                   bodyStyle={{
-                    height: "250px",
+                    // height: "250px",
                     display: "flex",
                     flexDirection: "column",
                     backgroundColor: card.background,

@@ -2,8 +2,8 @@ import React from 'react';
 
 function ContactFooter() {
   return (
-    <div>
-      <div id="contact-footer-container">
+    <div >
+      <div id="contact-footer-container" >
         <div id="cf-text">
           <h1>Contact Us</h1>
           <hr id="contact-us-thickline" />
@@ -14,6 +14,7 @@ function ContactFooter() {
         </div>
         <img 
           id="img-trbc-map"
+          style={{width:"80%"}}
           src={require('../imgs/trbc_map.jpg')}
           alt=""
         />
