@@ -1,7 +1,6 @@
 import React from 'react';
-import { BiChurch } from 'react-icons/bi';
-import { HiOutlineMail } from 'react-icons/hi';
-import { AiOutlinePhone } from 'react-icons/ai';
+import { IoMail, IoLocationSharp } from 'react-icons/io5';
+import { AiFillPhone } from 'react-icons/ai';
 
 function ContactFooter() {
   return (
@@ -11,9 +10,18 @@ function ContactFooter() {
           <h1>Contact Us</h1>
           <hr id="contact-us-thickline" />
           <h2>Singapore Thomson Road Baptist Church</h2>
-          <p><span><BiChurch /></span> 45 Thomson Road Singapore 307584</p>
-          <p><span><HiOutlineMail /></span> admin@trbc.org.sg</p>
-          <p><span><AiOutlinePhone /></span> +65 6256 2277</p>
+          <div>
+            <div className='icon'><IoLocationSharp /></div>
+            <p>45 Thomson Road Singapore 307584</p>
+          </div>
+          <div>
+            <div className='icon'><IoMail/></div>
+            <p>admin@trbc.org.sg</p>
+          </div>
+          <div>
+            <div className='icon'><AiFillPhone/></div>
+            <p>+65 6256 2277</p>
+          </div>
         </div>
         <img
           id="img-trbc-map"
@@ -21,7 +29,7 @@ function ContactFooter() {
           alt=""
         />
       </div>
-      <div id="cf-copyright">Copyright © 2020. TRBC.</div>
+      <div id="cf-copyright">Copyright © 2021. TRBC.</div>
     </div>
   );
 }
