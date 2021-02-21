@@ -95,6 +95,7 @@ a {
 #mission-vision-container {
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 50px;
 }
@@ -109,9 +110,9 @@ a {
 
 #mv-diagrams-container {
   background-color: #C4C4C4;
-  width: 510px;
-  height: 482px;
-  margin-right: 40px;
+  max-width: 500px;
+  height: 500px;
+  margin: 40px 0 40px 0;
 }
 
 #mv-text-container {
@@ -128,6 +129,18 @@ a {
   background-color: #f37021;
   border-style: none;
   margin-left: 0;
+}
+
+@media (min-width:900px) {
+  #mv-diagrams-container {
+    width: 500px;
+    margin: 0 60px 0 0;
+  }
+
+  #mission-vision-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /* Contact Us */
