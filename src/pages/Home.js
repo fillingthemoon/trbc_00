@@ -1,29 +1,43 @@
-import React from "react";
-import { Carousel, Image } from "antd";
-import { UserOutlined } from "@ant-design/icons";
+import React from 'react';
+import { Carousel, Image } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+
+const contentStyle = {
+  display: 'block',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  width: '50%',
+  height: '80%',
+  height: '160px',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+};
+
 function Home() {
   return (
     <div>
       <div className="top-img-container">
         <img
           className="top-img-exterior"
-          src={require("../imgs/exterior.jpg")}
+          src={require('../imgs/exterior.jpg')}
           alt=""
         />
-        <div className="top-img-title">TRBC</div>
+        <div className="top-img-title">Thomson Road Baptist Church</div>
       </div>
-      <br />
-      <br />
 
       <Carousel autoplay>
         <div>
           <Image
-            src="https://trbccec.files.wordpress.com/2020/08/trbc-cec-2020-snapshot-.png"
+            style={contentStyle}
+            src={require('../imgs/home/cec2020.png')}
           />
         </div>
         <div>
-          <Image 
-            src="http://www.trbc.org.sg/images/Images/English_Invite_Come__Celebrate_Christmas_1_Dec.png"
+          <Image
+            style={contentStyle}
+            src={require('../imgs/home/christmas_event2020.png')}
           />
         </div>
       </Carousel>

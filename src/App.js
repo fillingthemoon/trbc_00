@@ -21,15 +21,14 @@ import Event from "./pages/Event";
 import Services from "./pages/Services";
 import EventByService from "./pages/EventByService";
 import Home from "./pages/Home";
+
 function App() {
   return (
     <Router>
       <div>
-        {/* <NavBar/> */}
         <NavBarAntd />
 
         <Switch>
-          {/* Home pointed to Vision for now */}
           <Route path="/trbc_00/" exact component={Home} />
           <Route path="/trbc_00/ourhistory" exact component={OurHistory} />
           <Route path="/trbc_00/vision" exact component={Vision} />
