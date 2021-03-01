@@ -30,7 +30,7 @@ function App() {
 
         <Switch>
           {/* Home pointed to Vision for now */}
-          <Route path="/trbc_00/" exact component={Vision} />
+          <Route path="/trbc_00/" exact component={Home} />
           <Route path="/trbc_00/ourhistory" exact component={OurHistory} />
           <Route path="/trbc_00/vision" exact component={Vision} />
           <Route path="/trbc_00/imnew" exact component={ImNew} />
